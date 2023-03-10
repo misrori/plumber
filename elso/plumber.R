@@ -35,7 +35,7 @@ getIrisCsv <- function(req, res) {
 
 #* example to html output
 #* @param n_bins number of bins
-#* @get /mtcars_to_html
+#* @get /html_example
 getIrisCsv <- function(req, res, n_bins) {
   filename <- paste0(tempfile(),'.html')
   rmarkdown::render('report.Rmd', output_file = paste0(filename,'.html'),
